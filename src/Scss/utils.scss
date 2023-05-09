@@ -1,0 +1,268 @@
+.container {
+  max-width: $content-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-secondary {
+  font-family: $secondary-font;
+  color: $fourth-color;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.text-main {
+  font-family: $main-font;
+  color: $fourth-color;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text-underline {
+  margin-top: 40px;
+  width: 60px;
+  height: 3px;
+  background: #f38181;
+}
+
+.text-low {
+  margin-top: 47px;
+  color: #c2c2c2;
+  font-family: $third-font;
+  font-size: 1rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.quote-text {
+  font-family: $third-font;
+  color: #c2c2c2;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  i {
+    font-size: 2.5rem;
+    color: #c2c2c2;
+  }
+}
+
+.bottom-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 290px;
+}
+
+.bottom-text {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+
+  &-low {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+
+    .text-underline {
+      margin-top: 24px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.bottom {
+  background: $secondary-color;
+  margin-top: 110px;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.bottom-icon {
+  border: 3px solid #95e1d3;
+  padding: 45px 44px;
+  margin: 0 65px;
+}
+
+.bottom-img {
+  margin: 0 65px;
+  width: 100%;
+}
+
+.changed {
+  position: relative;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: linear-gradient(
+      180deg,
+      rgba(240, 142, 139, 1) 0%,
+      rgba(242, 211, 138, 1) 100%
+    );
+    cursor: pointer;
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      p {
+        font-family: $main-font;
+        color: $main-color;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+.changed:hover .overlay {
+  opacity: 0.8;
+}
+
+.changed-profile {
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    background: linear-gradient(
+      180deg,
+      rgba(240, 142, 139, 1) 0%,
+      rgba(242, 211, 138, 1) 100%
+    );
+    cursor: pointer;
+  }
+
+  &:hover .overlay {
+    opacity: 0.8;
+  }
+
+  &:hover .changed-profile-content {
+    opacity: 1;
+  }
+
+  &-content {
+    display: flex;
+    position: absolute;
+    top: 190px;
+    left: 75px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    &-icon {
+      background: #f2d38a;
+      padding: 1rem 1rem;
+      border-right: 1px solid #f08e8b;
+      cursor: pointer;
+
+      i {
+        color: #f08e8b;
+        font-size: 30px;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &:hover {
+        background: #f08e8b;
+
+        i {
+          color: #f2d38a;
+        }
+      }
+    }
+  }
+}
+
+.bg-rock {
+  background-image: url(../img/unique-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bg-cliff {
+  background-image: url(../img/bg-rock.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bg-map {
+  background-image: url(../img//map-bg.png);
+  max-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-text-main {
+  font-family: $main-font;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.item-text-secondary {
+  font-family: $third-font;
+  color: #c2c2c2;
+  font-size: 0.9rem;
+  line-height: 24px;
+  font-style: italic;
+}
+
+.item-text-underline {
+  font-family: $third-font;
+  color: #a7a5a5;
+  font-size: 0.9rem;
+  line-height: 24px;
+}
+
+.text-left {
+  text-align: left;
+}

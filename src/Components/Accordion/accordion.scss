@@ -1,0 +1,61 @@
+@import "../../Scss/config.scss";
+
+.accordion {
+  background-color: $main-color;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+
+  &-title {
+    padding: 0.8rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    cursor: pointer;
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    span {
+      font-family: $main-font;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 16px;
+    }
+  }
+
+  &-icon {
+    i {
+      transition: 0.3s ease-in-out;
+      font-size: 30px;
+      color: #ccc;
+    }
+  }
+
+  &.active &-icon {
+    i {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-content {
+    padding: 0 0.5rem;
+    max-height: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    transition: 0.4s ease-in-out;
+    background-color: $main-color;
+    font-family: $third-font;
+    color: #ccc;
+    font-style: italic;
+  }
+
+  &.active &-content {
+    padding: 0.5rem 0.5rem;
+    max-height: 8.8rem;
+  }
+}

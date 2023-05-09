@@ -1,0 +1,797 @@
+// LAPTOP
+// --------------------------
+@media (max-width: 1024px) {
+  .home {
+    &-btn {
+      margin-bottom: 20px;
+    }
+    &-bottom {
+      display: none;
+    }
+  }
+
+  .about {
+    &-grid {
+      .changed {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .whatwedo {
+    &-bottom {
+      .bottom-content {
+        max-width: 1024px;
+      }
+    }
+  }
+
+  .team {
+    &-grid {
+      &-img {
+        .changed-profile {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .work {
+    &-grid {
+      &-items {
+        grid-auto-rows: 207px;
+      }
+    }
+
+    &-bottom {
+      .bottom-content {
+        max-width: 1024px;
+
+        .bottom-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .footer {
+    &-grid {
+      &-first {
+        align-items: center;
+        justify-content: center;
+
+        &-content {
+          text-align: center;
+
+          h1 {
+            font-size: 2.5rem;
+          }
+
+          .item-text-underline {
+            font-size: 0.6rem;
+          }
+        }
+
+        &-input {
+          margin-left: 10px;
+        }
+      }
+
+      &-second {
+        &-content {
+          text-align: center;
+          margin-top: 60px;
+
+          &-items {
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+
+      &-third {
+        &-content {
+          text-align: center;
+          margin-top: 60px;
+
+          &-instagrid {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// TABLET
+// -------------------------------
+
+@media (max-width: 800px) {
+  .navbar {
+    .container {
+      width: 100%;
+    }
+    &-name {
+      flex: 33%;
+      justify-content: center;
+    }
+
+    &-links {
+      ul {
+        li {
+          margin: 0 10px;
+        }
+      }
+    }
+
+    &-icons {
+      div:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .home {
+    &-text {
+      &-secondary {
+        font-size: 2rem;
+      }
+
+      &-main {
+        font-size: 3rem;
+      }
+    }
+
+    &-btn {
+      margin-bottom: 20px;
+    }
+
+    &-bottom {
+      display: none;
+    }
+  }
+
+  .about {
+    .container {
+      flex-direction: column;
+    }
+
+    &-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &-bottom-grid {
+      height: 100%;
+
+      &-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .services {
+    &-grid {
+      grid-template-columns: repeat(1, 1fr);
+
+      &-item {
+        flex-direction: column;
+
+        &-icon {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        &-text {
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .whatwedo {
+    &-split {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &-photo {
+        img {
+          width: 100%;
+          height: 100%;
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &-bottom {
+      .bottom-content {
+        max-width: 800px;
+      }
+    }
+  }
+
+  .bottom {
+    height: 100%;
+
+    &-icon {
+      padding: 25px 24px;
+      margin: 20px 30px;
+    }
+
+    &-text {
+      .quote-text {
+        font-size: 1rem;
+      }
+
+      &-low {
+        .text-underline {
+          margin-top: 15px;
+        }
+
+        .text-secondary {
+          font-size: 1.5rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .arrow {
+    i {
+      font-size: 1.5rem;
+      margin: 0 15px;
+    }
+  }
+
+  .team {
+    &-grid {
+      grid-template-columns: repeat(1, 2fr);
+    }
+  }
+
+  .work {
+    &-grid {
+      &-items {
+        grid-template-columns: repeat(2, 2fr);
+        grid-auto-rows: 312px;
+      }
+    }
+
+    &-bottom {
+      .bottom-content {
+        max-width: 800px;
+
+        .bottom-img {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .bottom-img {
+    margin: 0 35px;
+  }
+
+  .clients {
+    &-grid {
+      margin-top: 50px;
+      gap: 50px;
+    }
+  }
+
+  .blog {
+    &-grid {
+      grid-template-columns: repeat(1, 2fr);
+
+      &-item {
+        &-content {
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .footer {
+    &-grid {
+      grid-template-columns: repeat(1, 2fr);
+
+      &-first {
+        justify-content: center;
+        align-items: center;
+
+        &-content {
+          text-align: center;
+        }
+      }
+
+      &-second {
+        &-content {
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      &-third {
+        &-content {
+          text-align: center;
+          &-instagrid {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+// MOBILE
+// ---------------------
+
+@media (max-width: 500px) {
+  .navbar {
+    .container {
+      width: 100%;
+    }
+    &-name {
+      justify-content: space-between;
+      margin: 0 40px;
+    }
+
+    &-links {
+      display: none;
+    }
+
+    &-hamburger {
+      display: block;
+      margin-right: 10px;
+    }
+
+    &-icons {
+      div:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .home {
+    &-text {
+      &-secondary {
+        font-size: 2rem;
+      }
+
+      &-main {
+        font-size: 3rem;
+      }
+
+      &-underline {
+        margin-top: 40px;
+      }
+    }
+
+    &-btn {
+      margin-bottom: 40px;
+    }
+
+    &-bottom {
+      display: none;
+    }
+  }
+
+  .about {
+    .text-secondary {
+      font-size: 1.5rem;
+    }
+
+    .text-main {
+      font-size: 1.8rem;
+    }
+
+    .text-underline {
+      margin-top: 20px;
+    }
+
+    .text-low {
+      font-size: 0.8rem;
+    }
+
+    &-grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+
+      .changed {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    &-bottom-grid {
+      height: 100%;
+      &-container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      &-item {
+        border-bottom: 1px solid #b5eae0;
+
+        h1 {
+          font-size: 3rem;
+        }
+
+        span {
+          font-size: 0.8rem;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .services {
+    .text-secondary {
+      font-size: 1.5rem;
+    }
+
+    .text-main {
+      font-size: 1.8rem;
+    }
+
+    .text-underline {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    &-grid {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 30px;
+
+      &-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &-icon {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+
+        &-text {
+          justify-content: center;
+          text-align: center;
+
+          .item-text-main {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .design {
+    .text-secondary {
+      font-size: 1.5rem;
+    }
+
+    .text-main {
+      font-size: 1.8rem;
+    }
+
+    .text-underline {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    &-devices {
+      &-tablet {
+        img {
+          width: 95%;
+          height: 95%;
+        }
+      }
+
+      &-phone {
+        display: none;
+      }
+    }
+  }
+
+  .whatwedo {
+    .text-secondary {
+      font-size: 1.5rem;
+    }
+
+    .text-main {
+      font-size: 1.8rem;
+    }
+
+    .text-underline {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .text-low {
+      font-size: 0.8rem;
+    }
+
+    &-split {
+      flex-direction: column;
+
+      &-photo {
+        margin-bottom: 40px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          margin-right: 0;
+        }
+      }
+
+      &-accordion {
+        .accordion-title {
+          span {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+  .bottom {
+    display: none;
+  }
+
+  .team {
+    .text-secondary {
+      font-size: 1.5rem;
+    }
+
+    .text-main {
+      font-size: 1.8rem;
+    }
+
+    .text-underline {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .text-low {
+      font-size: 0.8rem;
+    }
+
+    &-grid {
+      grid-template-columns: repeat(1, 1fr);
+
+      &-img {
+        .changed-profile {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          &-content {
+            top: 170px;
+            left: 45px;
+          }
+        }
+      }
+    }
+    &-bottom {
+      flex-direction: column;
+      height: 100%;
+
+      &-items {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .work {
+    .text-secondary {
+      font-size: 1.5rem;
+    }
+
+    .text-main {
+      font-size: 1.8rem;
+    }
+
+    .text-underline {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .text-low {
+      font-size: 0.8rem;
+    }
+
+    &-grid {
+      margin-top: 40px;
+
+      &-items {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 315px;
+      }
+    }
+  }
+
+  .clients {
+    .text-secondary {
+      font-size: 1.5rem;
+    }
+
+    .text-main {
+      font-size: 1.8rem;
+    }
+
+    .text-underline {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .text-low {
+      font-size: 0.8rem;
+    }
+
+    &-grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+
+      &-item {
+        &:nth-child(2) {
+          margin-bottom: 20px;
+        }
+
+        &:nth-child(3) {
+          display: none;
+        }
+        &:nth-child(4) {
+          display: none;
+        }
+        &-img {
+          margin-left: 20px;
+        }
+
+        &-text {
+          .text-underline {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .blog {
+    .text-secondary {
+      font-size: 1.5rem;
+    }
+
+    .text-main {
+      font-size: 1.8rem;
+    }
+
+    .text-underline {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    &-grid {
+      grid-template-columns: repeat(1, 1fr);
+
+      &-item {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        &-content {
+          top: 0;
+          left: 0;
+        }
+
+        &-text {
+          .item-text-main {
+            font-size: 0.8rem;
+          }
+          .item-text-underline {
+            font-size: 0.8rem;
+          }
+        }
+
+        &-icons {
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .map {
+    &-content {
+      span {
+        i {
+          margin-top: 10px;
+          font-size: 1.5rem;
+        }
+      }
+
+      .item-text-main {
+        font-size: 1rem;
+      }
+
+      .text-underline {
+        width: 30px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .footer {
+    &-grid {
+      grid-template-columns: repeat(1, 1fr);
+
+      &-first {
+        align-items: center;
+        justify-content: center;
+
+        &-content {
+          text-align: center;
+        }
+
+        &-input {
+          input {
+            width: 100%;
+          }
+
+          button {
+            width: 100px;
+            padding: 0.5rem 0.5rem;
+          }
+        }
+      }
+
+      &-second {
+        &-content {
+          text-align: center;
+
+          &-items {
+            gap: 15px;
+            margin-left: 20px;
+            align-items: center;
+            justify-content: center;
+          }
+
+          &-item {
+            flex-direction: column;
+
+            img {
+              margin-right: 0;
+            }
+
+            &-text {
+              .item-text-main {
+                font-size: 0.8rem;
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+      }
+
+      &-third {
+        &-content {
+          text-align: center;
+
+          &-instagrid {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
