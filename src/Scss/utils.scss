@@ -115,13 +115,16 @@
 
 .changed {
   position: relative;
+  transition: transform 0.4s ease-in-out;
   .overlay {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 3px;
     right: 0;
     bottom: 0;
     opacity: 0;
+    width: 380px;
+    height: 250px;
     transition: opacity 0.4s ease-in-out;
     background: linear-gradient(
       180deg,
@@ -146,13 +149,27 @@
       }
     }
   }
+  &-behind {
+    position: absolute;
+    background: #95e1d3;
+    z-index: -1;
+    width: 380px;
+    height: 250px;
+    top: 0;
+    left: 3px;
+  }
 }
 .changed:hover .overlay {
   opacity: 0.8;
 }
 
+.changed:hover {
+  transform: translate(-10px, -10px);
+}
+
 .changed-profile {
   position: relative;
+  transition: transform 0.4s ease-in-out;
 
   .overlay {
     position: absolute;
@@ -161,6 +178,8 @@
     right: 0;
     bottom: 0;
     opacity: 0;
+    width: 380px;
+    height: 470px;
     transition: opacity 0.4s ease-in-out;
     background: linear-gradient(
       180deg,
@@ -185,7 +204,7 @@
     left: 75px;
     z-index: 1;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &-icon {
       background: #f2d38a;
       padding: 1rem 1rem;
@@ -210,6 +229,19 @@
       }
     }
   }
+  &-behind {
+    position: absolute;
+    background: #95e1d3;
+    width: 380px;
+    height: 470px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.changed-profile:hover {
+  transform: translate(-10px, -10px);
 }
 
 .bg-rock {
@@ -261,6 +293,7 @@
   color: #a7a5a5;
   font-size: 0.9rem;
   line-height: 24px;
+  padding: 0 1rem;
 }
 
 .text-left {

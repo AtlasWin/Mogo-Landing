@@ -51,7 +51,7 @@ function CarouselSlider() {
             emulateTouch={true}
             showIndicators={true}
             showStatus={false}
-            width={800}
+            width={750}
           >
             {data.map((item) => (
               <div className="bottom-content">

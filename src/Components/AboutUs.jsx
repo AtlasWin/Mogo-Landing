@@ -20,32 +20,41 @@ function AboutUs() {
             </p>
           </div>
           <div className="about-grid">
-            <div className="changed">
-              <img src={require("../img/about1.png")} alt="img1" />
-              <div className="overlay">
-                <div className="content">
-                  <ImUsers size={30} color="#fff" />
-                  <p>Super team</p>
+            <div className="about-grid-item">
+              <div className="changed">
+                <img src={require("../img/about1.png")} alt="img1" />
+                <div className="overlay">
+                  <div className="content">
+                    <ImUsers size={30} color="#fff" />
+                    <p>Super team</p>
+                  </div>
                 </div>
               </div>
+              <div className="changed-behind"></div>
             </div>
-            <div className="changed">
-              <img src={require("../img/about2.png")} alt="img2" />
-              <div className="overlay">
-                <div className="content">
-                  <SlBookOpen size={30} color="#fff" />
-                  <p>Creative Environment</p>
+            <div className="about-grid-item">
+              <div className="changed">
+                <img src={require("../img/about2.png")} alt="img2" />
+                <div className="overlay">
+                  <div className="content">
+                    <SlBookOpen size={30} color="#fff" />
+                    <p>Creative Environment</p>
+                  </div>
                 </div>
               </div>
+              <div className="changed-behind"></div>
             </div>
-            <div className="changed">
-              <img src={require("../img/about3.png")} alt="img3" />
-              <div className="overlay">
-                <div className="content">
-                  <AiOutlineAntDesign size={30} color="#fff" />
-                  <p>Web Design</p>
+            <div className="about-grid-item">
+              <div className="changed">
+                <img src={require("../img/about3.png")} alt="img3" />
+                <div className="overlay">
+                  <div className="content">
+                    <AiOutlineAntDesign size={30} color="#fff" />
+                    <p>Web Design</p>
+                  </div>
                 </div>
               </div>
+              <div className="changed-behind"></div>
             </div>
           </div>
         </div>

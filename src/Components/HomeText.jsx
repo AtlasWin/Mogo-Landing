@@ -21,6 +21,7 @@ function HomeText() {
                   <span className="lines-content-number">01</span>
                   <p className="lines-content-text">Intro</p>
                 </div>
+                <div className="lines-overline"></div>
               </div>
               <div className="lines-item">
                 <span className="lines-upperline"></span>

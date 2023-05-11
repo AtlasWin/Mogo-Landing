@@ -44,6 +44,7 @@ function Team() {
                   </div>
                 </div>
               </div>
+              <div className="changed-profile-behind"></div>
               <div className="team-grid-name">
                 <h2 className="item-text-main">Matthew Dix</h2>
                 <span className="item-text-secondary">Graphic Design</span>
@@ -76,6 +77,8 @@ function Team() {
                   </div>
                 </div>
               </div>
+              <div className="changed-profile-behind"></div>
+
               <div className="team-grid-name">
                 <h2 className="item-text-main">Christopher Campbell</h2>
                 <span className="item-text-secondary">Branding/UX design</span>
@@ -108,6 +111,7 @@ function Team() {
                   </div>
                 </div>
               </div>
+              <div className="changed-profile-behind"></div>
               <div className="team-grid-name">
                 <h2 className="item-text-main">Michael Fertig</h2>
                 <span className="item-text-secondary">Developer</span>

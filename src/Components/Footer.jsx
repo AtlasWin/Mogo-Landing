@@ -64,7 +64,8 @@ function Footer() {
                     <img src={require("../img/footer3.png")} alt="footer3" />
                     <div className="footer-grid-second-content-item-text">
                       <h2 className="item-text-main">
-                        sed do eiusmod tempor incididunt ut labore
+                        <span>blabla</span>Sed do eiusmod tempor incididunt ut
+                        labore
                       </h2>
                       <p className="item-text-secondary">Jan 9, 2016</p>
                     </div>
